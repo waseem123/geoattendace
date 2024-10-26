@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF62B1</color>
+    <color name="colorPrimaryDark">#FF62B1</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="geo3">#E60AED</color>
+    <color name="geo2">#960EF2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="textbg">#DFC2F2</color>
+    <color name="pendingleave">#FFF59D</color>
+    <color name="statusapproved">#00BCD4</color>
+    <color name="statusrejected">#EF9A9A</color>
+</resources>

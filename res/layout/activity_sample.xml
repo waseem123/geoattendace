@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SampleActivity">
+
+    <TextView
+        android:id="@+id/tv_airplanestatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+<!--    <com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        android:id="@+id/content"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        app:rb_color="#F686F8"-->
+<!--        app:rb_duration="3000"-->
+<!--        app:rb_radius="32dp"-->
+<!--        app:rb_rippleAmount="1"-->
+<!--        app:rb_scale="4"-->
+<!--        app:rb_type="strokeRipple">-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/ll_clock"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginLeft="16dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginRight="16dp"-->
+<!--            android:background="@drawable/clockdrawable"-->
+<!--            android:clickable="true"-->
+<!--            android:orientation="vertical"-->
+<!--            android:padding="16dp">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:clickable="false"-->
+<!--                android:fontFamily="@font/montserrat"-->
+<!--                android:gravity="center"-->
+<!--                android:padding="16dp"-->
+<!--                android:text="@string/intime"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="@color/white" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:clickable="false"-->
+<!--                android:fontFamily="@font/montserrat"-->
+<!--                android:gravity="center"-->
+<!--                android:padding="16dp"-->
+<!--                android:text="@string/clock_out"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="24sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:clickable="false"-->
+<!--                android:fontFamily="@font/montserrat"-->
+<!--                android:gravity="center"-->
+<!--                android:padding="16dp"-->
+<!--                android:text="@string/default_time"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="@color/white" />-->
+<!--        </LinearLayout>-->
+<!--    </com.skyfishjy.library.RippleBackground>-->
+</RelativeLayout>

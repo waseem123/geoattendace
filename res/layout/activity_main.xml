@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_logo"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/geo_attendance"
+        android:textAlignment="center"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_direct"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_margin="16dp"
+        android:background="#fa63ac"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="false"
+            android:drawableTint="#FFFFFF"
+            android:fontFamily="@font/montserrat"
+            android:padding="16dp"
+            android:text="Direct Attendance"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:padding="16dp"
+            android:src="@drawable/thumb"
+            android:tint="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/ll_direct"
+        android:layout_margin="16dp"
+        android:background="#b425ea"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:padding="16dp"
+            android:src="@drawable/login"
+            android:tint="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="false"
+            android:drawableTint="#FFFFFF"
+            android:fontFamily="@font/montserrat"
+            android:padding="16dp"
+            android:text="Skip to Login"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/footer">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="16dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/company"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+</RelativeLayout>

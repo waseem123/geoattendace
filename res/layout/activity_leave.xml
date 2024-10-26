@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.LeaveActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FF62B1"
+        android:theme="@style/ToolbarTheme"
+        app:title="Leave Management"
+        app:titleTextColor="@color/white" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Apply Leave"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv2"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                app:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:id="@+id/relative1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/layout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FAF99C"
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/tv3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Casual Balance:02"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/tv4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/tv3"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Sick Balance:06"
+                            android:textAlignment="center"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/layout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layout2"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <EditText
+                            android:id="@+id/ed_fromdate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:fontFamily="@font/montserrat"
+                            android:hint="From Date" />
+
+                        <EditText
+                            android:id="@+id/ed_todate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/layout2"
+                            android:layout_toRightOf="@id/ed_fromdate"
+                            android:layout_weight="1"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:fontFamily="@font/montserrat"
+                            android:hint="To Date" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layout3"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <Spinner
+                            android:id="@+id/sp_leavetype"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat"
+                            android:hint="Leave Type" />
+
+                        <Spinner
+                            android:id="@+id/sp_duration"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/sp_leavetype"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat"
+                            android:hint="Duration" />
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/ed_Reason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layout4"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="Reason" />
+
+                    <Button
+                        android:id="@+id/btn_submit"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ed_Reason"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="#9A25E3"
+                        android:fontFamily="@font/montserrat"
+                        android:padding="8dp"
+                        android:text="submit"
+                        android:textColor="#ffffff" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv1"
+                android:layout_margin="8dp"
+                app:cardElevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Leave Date:"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tv6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_toRightOf="@+id/tv5"
+                        android:fontFamily="@font/montserrat"
+                        android:text="01/02/2020-05/02/2020" />
+
+                    <TextView
+                        android:id="@+id/tv7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv6"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Leave Type:"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tv8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv6"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_toRightOf="@+id/tv7"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Sick Leave" />
+
+                    <TextView
+                        android:id="@+id/tv9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv7"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Reason:"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/ed_reason2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv9"
+                        android:layout_margin="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="@string/lorem" />
+
+                    <TextView
+                        android:id="@+id/tv10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ed_reason2"
+                        android:layout_margin="8dp"
+                        android:background="#F0E82B"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="Status : Pending"
+                        android:textColor="#000000" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_viewleavereport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv2"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:background="@color/white"
+                android:fontFamily="@font/montserrat"
+                android:padding="16dp"
+                android:text="View Report" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
+
+

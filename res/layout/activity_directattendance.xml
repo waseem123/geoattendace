@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_logo"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Geo Attendance"
+        android:textAlignment="center"
+        android:textSize="32dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ed_employeeid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:id="@+id/ed_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Employee ID"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/iv_thumb"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:padding="16dp"
+        android:layout_below="@+id/ed_employeeid"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rectangle"
+        android:src="@drawable/thumbprint" />
+
+
+    <RelativeLayout
+        android:id="@+id/layout_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_thumb"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/ed_punchin"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/btn_punchin"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Punch IN"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/ed_punchout"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:layout_toRightOf="@+id/ed_punchin"
+            android:background="@drawable/btn_punchpout"
+            android:padding="16dp"
+            android:text="Punch OUT"
+            android:textColor="#FF0000" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_submit"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:textSize="20sp"
+        android:background="@drawable/gradient"
+        android:text="submit"
+        android:textColor="#ffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/footer">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/montserrat"
+            android:padding="16dp"
+            android:text="@string/company"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+</RelativeLayout>
